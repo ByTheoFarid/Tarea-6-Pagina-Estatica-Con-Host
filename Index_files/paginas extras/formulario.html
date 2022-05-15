@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Formulario</title>
+	<style type="text/css">
+		
+		h1 {
+			font-size: 40px;
+			font-family:sans-serif;
+			color:rgb(15, 6, 24);
+		}
+		p {
+			font-size: 45px;
+			font-family: Arial Black;
+			color: rgb(162, 18, 18);
+		}
+		div{
+	width:700px; 
+	background:rgba(226, 218, 3, 0); 
+	margin:20px 50px; 
+	padding:15px;
+	border: 0px solid rgba(247, 251, 16, 0.702);
+	display: inline-block;   
+	border-radius: 10px;
+
+}
+	</style>
+</head>
+
+<body background="mascotas.jpg"  width="300" height="200">
+<h1><center>QUE MASCOTA PREFIERES???</center></h1>
+<form>
+		<center><div class="caja">
+	<p>Que nombre le pondrias a tu mascota? <input type="text" placeholder="Escribe aqui" required ></p>
+	<p>Macho <input type="radio" name="sexo" value="h" required > Hembra <input type="radio" name="sexo" value="m" required ></p>
+	<p>Fecha de adopcion? <input type="date" name="fecha"></p>
+	<p>Hora de adopcion: <input type="time" name="hora"></p>
+    <p>Color de collar preferido? <input type="color" name="color"></p>
+    <p>Juego favorito: <input type="text" placeholder="Jugar con tu mascota" required ></p>
+    <p>Cuantas mascotas quisieras tener?<input type="range" name="calif" min="0" max="10" step="1"></p>
+    <p>Foto de tu mascota: <input type="file" name="archivo"></p>
+
+    <p>En que municipio se encuenta su veterinaria mas cercana? <select name="menu" size="1">
+    	<option value="0">Elija una municipio</option>
+    	<optgroup label="Yucatan">
+    		<option value="1">Valladolid</option>
+    		<option value="2">Dzitnup</option>	
+    		<option value="3">Ebtún</option>
+    		<option value="4">Pixoy</option>
+    		<option value="5">Popolá</option>
+    		<option value="6">Xocén</option>
+			<option value="7">Yalcobá</option>
+			<option value="8">Tesoco</option>
+    	</optgroup>
+    </select></p>
+
+	<p><input type="reset" value="Borrar"></p>
+	<p><input type="submit" value="Enviar"></p>
+	</div>
+	</center>
+</form>
+
+</body>
+
+</html>
